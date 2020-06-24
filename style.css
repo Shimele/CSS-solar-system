@@ -213,7 +213,6 @@ span{
     left:73%;
     top:42%;
     transform: rotate(190deg);
-    z-index: 0;
 }
 #saturn-auxillary-orbit1{
     width: 12%;
@@ -334,4 +333,106 @@ span{
     position:absolute;
     left:15%;
     top:30%;
+    width: 230px;
+    height: 230px;
 }
+
+@media only screen and (max-width: 600px) {
+    #container img{
+        width: 100px;
+        height: 100px;
+        left:10%;
+        top:40%;
+    }
+    span{
+        font-size: small;
+    }
+    #mercury{
+        width: 25px;
+        height: 25px;
+        left:30%;
+        top:42%;
+    }
+    #venus{
+        width: 45px;
+        height: 45px;
+        left:39%;
+        top:47%;
+    }
+    #earth{
+        width: 58px;
+        height: 58px;
+        left:23%;
+        top:63%;
+    }
+    #earth #green2{
+        top:25%;
+    }
+    #earth #green3 {
+        left:4%;
+        bottom:38%;
+        width: 25px;
+        height: 25px;
+    }
+    #earth-container span{
+        margin-top: 98%;
+        margin-left: 23%;
+    }
+    #mars{
+        width: 35px;
+        height: 35px;
+        
+        left:50%;
+        top:60%;
+    }
+    #jupiter{
+        width: 85px;
+        height: 85px;
+        left:50%;
+        top:25%;
+    }
+    #saturn{
+        width: 75px;
+        height: 75px;
+        left:50%;
+        top:70%;
+    }
+    #saturn-auxillary-orbit1{
+        width: 24%;
+        height: 60px;
+        position: absolute;
+        left:46%;
+        top:70%;
+        transform: rotate(-125deg);
+    
+    }
+    #saturn-container span{
+        left:48%;
+        top:75%;
+    }
+    #uranus{
+        width: 65px;
+        height: 65px;
+        left:75%;
+        top:38%;
+    }
+    #neptune{
+        width: 62px;
+        height: 62px;
+        left:85%;
+        top:55%;
+    }
+    #neptune-container span{
+        left:85%;
+    }
+    #pluto{
+        width: 15px;
+        height: 15px;
+        left:65%;
+        top:16.5%;
+    }
+    #pluto-container span{
+        left:60%;
+        top:16%;
+    }
+  }
