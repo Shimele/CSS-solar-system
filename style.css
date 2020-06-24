@@ -1,0 +1,337 @@
+
+body{
+    min-height: 600px;
+    background-color: #091329;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 1px, transparent 10px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 10px),
+    radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
+    radial-gradient(white, rgba(255,255,255,.2) 1px, transparent 10px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 10px),
+    radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
+    radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 1px, transparent 10px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px,3px 20px, 850px 55px, 200px 170px, 120px 320px;
+
+}
+.orbit{
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+span{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#mercury-orbit{
+    width: 15%;
+    height: 80px;
+    position: absolute;
+    left: 22%;
+    top: 43%;
+
+}
+#mercury{
+    background: rgb(63, 79, 107);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position:absolute;
+    left:32%;
+    top:41%;
+}
+#mercury-container span{
+    position:absolute;
+    left:33%;
+    top:41%;
+}
+#venus-orbit{
+    width: 18%;
+    height: 120px;
+    position: absolute;
+    left: 25%;
+    top: 40%;
+
+}
+#venus{
+    background: #985118;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position:absolute;
+    left:41%;
+    top:46.5%;
+}
+#venus #venus-cloud{
+    position: relative;
+    left:18%;
+    top:5%;
+    background: #833B0A;
+    display: block;
+    width: 20px;
+    height: 30px;
+    border-radius: 60% 60% 60% 60% / 70% 70% 70% 70%;
+    transform: rotate(45deg);
+    
+}
+#venus-container span{
+    position:absolute;
+    left:42%;
+    top:55%;
+}
+#earth-orbit{
+    width: 30%;
+    height: 170px;
+    position: absolute;
+    left: 20%;
+    top: 36.5%;
+
+}
+#earth{
+    background: #5482C3;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position:absolute;
+    left:47%;
+    top:38%;
+}
+#earth #green1{
+    position: relative;
+    left:48%;
+    top:5%;
+    background: #007847;
+    display: block;
+    width: 20px;
+    height: 30px;
+    border-radius: 70% 70% 70% 70% / 60% 60% 60% 60%;
+    transform: rotate(85deg);
+    
+}
+#earth #green2{
+    position: relative;
+    left:18%;
+    top:35%;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #007847;
+    border-radius: 50%;
+    transform: rotate(85deg);
+}
+#earth #green3 {
+    position: relative;
+    left:8%;
+    bottom:23%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 #007847;
+    transform: rotate(-25deg);
+  }
+  #earth-container span{
+    display: inline-block;
+    margin-top: 15%;
+    margin-left: 48%;
+    animation: roll 3s infinite;
+    transform: rotate(30deg);
+    opacity: .7;
+}
+@keyframes roll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+#mars-orbit{
+    width: 48%;
+    height: 270px;
+    position: absolute;
+    left: 10%;
+    top: 27.5%;
+
+}
+#mars{
+    background: #B5A277;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position:absolute;
+    left:50%;
+    top:60%;
+}
+#mars-container span{
+    position:absolute;
+    left:48%;
+    top:65%;
+}
+#jupiter-orbit{
+    width: 60%;
+    height: 300px;
+    position: absolute;
+    left: 7%;
+    top: 25%;
+
+}
+#jupiter{
+    background: #A79281;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    position:absolute;
+    left:60%;
+    top:30%;
+}
+#jupiter-container span{
+    position:absolute;
+    left:57%;
+    top:30%;
+}
+#saturn-orbit{
+    width: 71%;
+    height: 370px;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+
+}
+#saturn{
+    background: repeating-linear-gradient(
+    45deg,
+    #E0AC5F 5px,
+    #E0AC5F 5px,
+    #CD903E 30px,
+    #CD903E 30px
+    );
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position:absolute;
+    left:73%;
+    top:42%;
+    transform: rotate(190deg);
+    z-index: 0;
+}
+#saturn-auxillary-orbit1{
+    width: 12%;
+    height: 60px;
+    position: absolute;
+    left: 70%;
+    top: 44%;
+    transform: rotate(-125deg);
+    border-bottom: #E0AC5F;
+    border-right: 10px solid #B98C54;
+    border-left: 10px solid #B98C54;
+    border-top: 2px solid #B98C54;
+
+}
+#saturn-container span{
+    position:absolute;
+    left:72%;
+    top:53%;
+}
+
+#uranus-orbit{
+    width: 83%;
+    height: 390px;
+    position: absolute;
+    left: 3%;
+    top: 18.5%;
+
+}
+#uranus{
+    background: #AACFD5;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position:absolute;
+    left:83%;
+    top:38%;
+}
+#uranus-container span{
+    position:absolute;
+    left:80%;
+    top:38%;
+}
+#neptune-orbit{
+    width: 92%;
+    height: 412px;
+    position: absolute;
+    left: 2%;
+    top: 16.5%;
+
+}
+#neptune{
+    background-color: #41629F;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    position:absolute;
+    left:91%;
+    top:45%;
+}
+#neptune div{
+    background-color:#5482C3;
+    width: 3px;
+    height: 3px;
+    border-radius: 12%;
+    position:absolute;
+    left:70%;
+    top:48%;
+    
+}
+#neptune>div:nth-child(1){
+    left:75%;
+    top:45%;
+}
+#neptune>div:nth-child(2){
+    left:60%;
+    top:50%;
+}
+#neptune>div:nth-child(3){
+    left:50%;
+    top:48%;
+}
+#neptune-container span{
+    position:absolute;
+    left:90%;
+    top:55%;
+}
+#pluto-orbit{
+    width: 97%;
+    height: 420px;
+    position: absolute;
+    left: 1%;
+    top: 16%;
+
+}
+#pluto{
+    background: #898989;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left:90%;
+    top:30%;
+}
+
+#pluto-container span{
+    position:absolute;
+    left:92%;
+    top:30%;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+#container img{
+    position:absolute;
+    left:15%;
+    top:30%;
+}
